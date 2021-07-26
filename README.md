@@ -6,6 +6,20 @@ Por favor, digite a operação matemática que você gostaria de Fazer:
 * Para multiplicação
 / Para Divisão
 ''')
+import time
+t1 = time.time()
+
+# código aqui
+
+
+def calculate():
+    operation = input('''
+Por favor, digite a operação matemática que você gostaria de Fazer:
++ Para adição
+- Para subtração
+* Para multiplicação
+/ Para Divisão
+''')
 
     number_1 = int(input('Por favor insira o primeiro número: '))
     number_2 = int(input('Por favor insira o segundo número: '))
@@ -46,3 +60,5 @@ precione s para sim e n para não.
         again()
 
 calculate()
+tempoExec = time.time() - t1
+print("Tempo de execução: {} segundos".format(tempoExec))
